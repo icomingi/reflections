@@ -1,0 +1,59 @@
+2015.06.15
+
+Reflection and Learning
+
+People learn from experience, but deep learning comes from reflection.
+People set up expectation based on experience, 
+Act on the reality to get new experience, either this enhances their original understanding or corrects it
+People reflect on this process and gain deeper understanding through reflection again.
+
+Reflection theory roots from brain antonomy
+Concrete experience
+Reflective observation
+Abstract hypotheses
+Active testing
+
+Reflection is a search for connections.
+
+It's hard to make meaning out of experience unless it engages emotion.
+--Build emotional experience during learning can enhance a person's desire to learn. My experience shows that even though reading and understanding during learning can be hard and dull for anyone, but the one who enjoys learning always finds it delightful to finally understand or discover something new.
+
+Storytelling makes it easier to learn.
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+diff helps me identify where the code has been changed, narrow down the scope
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+debug saves some time
+learn from my own mistakes
+easily revert to a previously working code base
+easily manage all the different versions without cluttering the window
+
+
+Build a mind map for the concepts I just learned
+
+
+How often to make a commit?
+A commit for a logical change, such as fix a typo, add one feature
+Also consider duration of time, if it's getting long and commit in between.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+cons: arbitrary judgement, easy to forget to commit causing data loss or missing the good check point to commit
+pros: make logical change per commit, each commit is given a message to associate with, easy to find the way through history
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Git is designed with code in mind. Code is usually written in multiple files and packages, and in a repository. A Google doc is usually a single file, the correlation with other Google docs is not so easy to understand.
+
+How can you use the commands git log and git diff to view the history of files?
+Use git log (--stat) to show the commit history of the file, bacially a history of changes
+Use git diff commit#1 commit#2 to show the difference
+
+How might using version control make you more confident to make changes that could break something?
+Before I make any changes to something, make sure I have a the working state committed. Then I can make changes and make commits as well. If what I committed causes something wrong to happen, I can just revert back to where I started which was working at that time.
+A time machine basically.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+to keep track of the reflection file I have been updating.

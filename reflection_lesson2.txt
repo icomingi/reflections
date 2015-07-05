@@ -8,3 +8,6 @@ Respository is a place where commits of files are tracked, organized, and stored
 Staging area is not a directory, something like a place prepared before commits
 It's a cushion area, select what changes one would like to commit, option to revert back
 
+How can you use the staging area to make sure you have one commit per logical change?
+Use staging area to examine the difference I'm going to make compared to the working directory, hand pick stuff from working directory
+Examine the difference between the staging area and the last commit to make sure the changes in the staging area are a logical change.

@@ -30,7 +30,8 @@ or git log --graph --oneline branch1 branch2
 How do the diagrams help you visualize the branch structure?
 Group commits together under a branch makes it easy to understand the structure.
 
-git merge
+git merge branch1
+ - if supplied only with one branch, the supllied branch will be merged into the checkout out branch
 
 git show commit_id
  - compare a commit to its parent
@@ -38,3 +39,11 @@ git show commit_id
  What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
  The functions or features developed in another branch are merged with the checked out branch.
  To visualize the brancheds and merges.
+
+git log -n 1
+ - show the last commit
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+			pros						cons
+automatic   easy to do,raise warnings   loses control, can mess the code up
+manual      hard                        allows control, how the 											        code should be merged requires lots 										of study

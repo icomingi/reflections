@@ -11,3 +11,30 @@ It's a cushion area, select what changes one would like to commit, option to rev
 How can you use the staging area to make sure you have one commit per logical change?
 Use staging area to examine the difference I'm going to make compared to the working directory, hand pick stuff from working directory
 Examine the difference between the staging area and the last commit to make sure the changes in the staging area are a logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+ - Context switching from development perspective of a programmer
+	To experiment with some new features without breaking the working software
+	To develop a different version and start with the same code bases
+	To evolve the main branch (master) and the other branches at the same time
+ - When collaborating with others
+ 	Production branch with working code
+ 	Features to work on my own
+
+Branches would help make the switch from one direction to another more friendly and esay, people can name a branch and switch to that branch and checkout to make changes, then merge the changes back when it's done.
+
+What's the git command to see the commits visually?
+git log --graph --oneline --all
+or git log --graph --oneline branch1 branch2
+
+How do the diagrams help you visualize the branch structure?
+Group commits together under a branch makes it easy to understand the structure.
+
+git merge
+
+git show commit_id
+ - compare a commit to its parent
+
+ What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+ The functions or features developed in another branch are merged with the checked out branch.
+ To visualize the brancheds and merges.

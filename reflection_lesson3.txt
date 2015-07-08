@@ -1,0 +1,16 @@
+2015.07.08
+
+Q: Why do you need to use GitHub?
+
+A: A sharing platform using git for version control.
+	I need to view the open source project and contribute to that project
+	I need to collaborate with others to work on some projects, even private ones
+	May also be a social platform to meet friends
+
+
+Q: How do you set up a repository on GitHub?
+
+A: GitHub account
+	New repository
+	Create remote in local git repository pointing to the location on GitHub
+	Push

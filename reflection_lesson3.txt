@@ -19,3 +19,11 @@ Q: When would you want to use a remote repository rather than keeping all your w
 	Collaborate with other team members on the same project
 	Share my work with the reset of the world
 	Easily transfer the data between my different computing environment using the remote respository as the hub
+
+Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+	The commits on the remote may come from multiple sources. If automatic pulling from the remote to local may confuse myself.
+
+Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	Fork is a unique operation on Github to create a copy of project from the original author's account to my own account. Why don't just clone the author's Github repository? True, I can do so. But when I want to contribute to that project, I have to set up remote for the local copy and push the change to that directory and then communicate with the author to make a change. Github seems to have invented a way to solve this complexity.
+	Clone is a operation to copy stuff from one directory to another. It doesn't care about local to local or remote to local, but probably not from local to remote.
+	Branch is a way to group and name a streak of commits, usually happens locally. I can do that on Github as well. If the branch is created on Github, when pulled down I can directly check the branch out. While if the branch is created locally, Git will remind to set up upstream branch first.

@@ -14,3 +14,8 @@ A: GitHub account
 	New repository
 	Create remote in local git repository pointing to the location on GitHub
 	Push
+
+Q: When would you want to use a remote repository rather than keeping all your work local?
+	Collaborate with other team members on the same project
+	Share my work with the reset of the world
+	Easily transfer the data between my different computing environment using the remote respository as the hub

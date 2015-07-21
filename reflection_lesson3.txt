@@ -27,3 +27,8 @@ Q: Describe the differences between forks, clones, and branches. When would you 
 	Fork is a unique operation on Github to create a copy of project from the original author's account to my own account. Why don't just clone the author's Github repository? True, I can do so. But when I want to contribute to that project, I have to set up remote for the local copy and push the change to that directory and then communicate with the author to make a change. Github seems to have invented a way to solve this complexity.
 	Clone is a operation to copy stuff from one directory to another. It doesn't care about local to local or remote to local, but probably not from local to remote.
 	Branch is a way to group and name a streak of commits, usually happens locally. I can do that on Github as well. If the branch is created on Github, when pulled down I can directly check the branch out. While if the branch is created locally, Git will remind to set up upstream branch first.
+
+Q: What are the options of reverting back to a previous commit?
+	- Checkout, if referencable, any commit in the history can be checked out and reverted to
+	- Hard Reset, BE CAREFUL! This will lose the changes in the directory and commits that cannot be referenced. Backup those commits by creating a branch to reference those commits.
+	- Revert, if the changes and commits have already been published, meaning people other than yourself may base their work on your commits. Choose to revert to the previous state by committing the UNDO changes to the history.

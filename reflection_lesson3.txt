@@ -32,3 +32,16 @@ Q: What are the options of reverting back to a previous commit?
 	- Checkout, if referencable, any commit in the history can be checked out and reverted to
 	- Hard Reset, BE CAREFUL! This will lose the changes in the directory and commits that cannot be referenced. Backup those commits by creating a branch to reference those commits.
 	- Revert, if the changes and commits have already been published, meaning people other than yourself may base their work on your commits. Choose to revert to the previous state by committing the UNDO changes to the history.
+
+Q: What the expression of git push, git pull, and git merge?
+	git push [remote-name] [branch-name]
+	git pull [remote-name] [branch-name]
+	git merge [branch-to-be-merged], by default the branch is merged to the current branch, so need to checkout the branch first and then do merge.
+
+Q: What is the benefit of having a copy of the last known state of the remote stored locally?
+	This would tell you whether the local branch is up-to-date with the remote branch. Up-to-date, or ahead, or behind will be shown then. This would advise when you would need to pull or push updates from or to the remote.
+
+Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	Without Git or GitHub, when I want to change the file, I will acquire the lock so that any other person cannot modify the same content at the same time. After modification, the lock should be released so that other person can continue to work on the same file.
+	Merge would be easier since actual change is only made by one person at a time. But the efficiency will be compromised.
+	One could also collaborate with others in the way. People will go out from the same base and come up with different updates and changes. But at some time, the work has to be merged together. Without Git or GitHub, the difference comparison work will be very difficult. Easy change merge that's obvious to Git may not be obvious in that case, difficult changes with conflicts may be overlooked and merged without careful consideration. The result could be a mess.

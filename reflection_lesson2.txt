@@ -14,6 +14,7 @@ Examine the difference between the staging area and the last commit to make sure
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
  - Context switching from development perspective of a programmer
+ 	To do a hot fix
 	To experiment with some new features without breaking the working software
 	To develop a different version and start with the same code bases
 	To evolve the main branch (master) and the other branches at the same time
@@ -37,13 +38,13 @@ git show commit_id
  - compare a commit to its parent
 
  What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
- The functions or features developed in another branch are merged with the checked out branch.
- To visualize the brancheds and merges.
+ A new commit will be made, which has two immediate ancestors from two branches respectively. The functions or features developed in another branch are merged with the checked out branch.
+ To visualize the branches and merges.
 
 git log -n 1
  - show the last commit
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 			pros						cons
-automatic   easy to do,raise warnings   loses control, can mess the code up
-manual      hard                        allows control, how the 											        code should be merged requires lots 										of study
+automatic   easy to do, raise warnings  loses control, can mess the code up
+manual      hard, allows more control   how the 											        				code should be merged requires lots 										of study

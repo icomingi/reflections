@@ -21,27 +21,28 @@ Q: When would you want to use a remote repository rather than keeping all your w
 	Easily transfer the data between my different computing environment using the remote respository as the hub
 
 Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
-	The commits on the remote may come from multiple sources. If automatic pulling from the remote to local may confuse myself.
+	The commits on the remote may come from multiple sources. If automatic, then pulling from the remote to local may result in a lot of new code and may confuse myself.
 
 Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
-	Fork is a unique operation on Github to create a copy of project from the original author's account to my own account. Why don't just clone the author's Github repository? True, I can do so. But when I want to contribute to that project, I have to set up remote for the local copy and push the change to that directory and then communicate with the author to make a change. Github seems to have invented a way to solve this complexity.
+	Fork is a unique operation on Github to create a copy of project from the original author's account to my own account. Why don't just clone the author's Github repository? True, I can do so. But when I want to contribute to that project, I have to set up remote for the local copy and push the change to that directory and then communicate with the author to make a change. Github seems to have invented a way to solve this complexity by using "Pull Request".
 	Clone is a operation to copy stuff from one directory to another. It doesn't care about local to local or remote to local, but probably not from local to remote.
 	Branch is a way to group and name a streak of commits, usually happens locally. I can do that on Github as well. If the branch is created on Github, when pulled down I can directly check the branch out. While if the branch is created locally, Git will remind to set up upstream branch first.
 
 Q: What are the options of reverting back to a previous commit?
 	- Checkout, if referencable, any commit in the history can be checked out and reverted to
-	- Hard Reset, BE CAREFUL! This will lose the changes in the directory and commits that cannot be referenced. Backup those commits by creating a branch to reference those commits.
+	- Hard Reset, BE CAREFUL! This will lose the changes in the directory and commits that cannot be referenced. Back up those commits by creating a branch to reference those commits.
 	- Revert, if the changes and commits have already been published, meaning people other than yourself may base their work on your commits. Choose to revert to the previous state by committing the UNDO changes to the history.
 
-Q: What the expression of git push, git pull, and git merge?
+Q: What is the expression of git push, git pull, and git merge?
 	git push [remote-name] [branch-name]
 	git pull [remote-name] [branch-name]
-	git merge [branch-to-be-merged], by default the branch is merged to the current branch, so need to checkout the branch first and then do merge.
+	git merge [branch-to-be-merged], by default the branch is merged to the currently checked-out branch, so need to checkout the branch first and then do merge.
 
 Q: What is the benefit of having a copy of the last known state of the remote stored locally?
-	This would tell you whether the local branch is up-to-date with the remote branch. Up-to-date, or ahead, or behind will be shown then. This would advise when you would need to pull or push updates from or to the remote.
+	This would tell you whether the local branch is up-to-date with the remote branch. Up-to-date, or ahead, or behind will be indicated when you do "git status". This would give a great hint when you would need to pull or push updates from or to the remote.
 
 Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 	Without Git or GitHub, when I want to change the file, I will acquire the lock so that any other person cannot modify the same content at the same time. After modification, the lock should be released so that other person can continue to work on the same file.
-	Merge would be easier since actual change is only made by one person at a time. But the efficiency will be compromised.
-	One could also collaborate with others in the way. People will go out from the same base and come up with different updates and changes. But at some time, the work has to be merged together. Without Git or GitHub, the difference comparison work will be very difficult. Easy change merge that's obvious to Git may not be obvious in that case, difficult changes with conflicts may be overlooked and merged without careful consideration. The result could be a mess.
+	Merge in this case would be easier since actual change is only made by one person at a time. But the efficiency will be compromised.
+	And sometimes people may not be able to share the code on the same platform, so they will have to email the code back and forth, this could lead to a miserable situation.
+	One could also collaborate with others in a different way. People will go out from the same base and come up with different updates and changes. But at some time, the work has to be merged together. Without Git or GitHub, the difference comparison work will be very difficult. Easy change merge that's obvious to Git may not be obvious in that case, difficult changes with conflicts may be overlooked and merged without careful consideration. The result could be a mess.

@@ -30,6 +30,7 @@ git log
 git diff
 
 branch
+a view to look at commits, a way to organize commits
 
 git branch
 
@@ -43,3 +44,6 @@ git pull
 
 git remote
 
+forking
+
+pull request
